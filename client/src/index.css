@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1a3a52;
+  --secondary: #d4af37;
+  --accent: #2d7a4a;
+}
+
+body {
+  font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', 'IBM Plex Sans Arabic', serif;
+}
+
+.card {
+  @apply bg-white rounded-2xl border shadow-sm p-6;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-[#1a3a52] text-white rounded-xl font-semibold hover:bg-[#2d7a4a] transition-all active:scale-[0.985];
+}
+
+.input {
+  @apply px-4 py-3 border rounded-xl focus:outline-none focus:border-[#1a3a52] transition-all;
+}
