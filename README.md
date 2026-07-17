@@ -1,30 +1,31 @@
-# 🏪 حقيبة الرياضة - SportsBag CMS (النسخة الجديدة)
+# 🏪 حقيبة الرياضة - SportsBag CMS
 
-نظام إدارة متجر متكامل لـ "حقيبة الرياضة" - متخصص في أحذية كرة القدم والتجهيزات الرياضية.
+نظام إدارة متجر متكامل - واجهة جاهزة للنشر المجاني على Netlify
 
-## المميزات
-- إدارة 221 منتج مع فئات ومخزون
-- إدارة الطلبات والعملاء عبر 4 فروع (إدلب، حلب، دمشق، جرمانا)
-- نظام صلاحيات متقدم (Admin / Manager / Staff)
-- تصميم موحد بألوان Navy Blue + Gold + Green
-- دعم كامل للغة العربية (RTL)
-- جاهز للنشر على Netlify أو Manus أو أي خادم
+## نشر سريع على Netlify (مجاني)
+
+1. ادخل إلى https://app.netlify.com
+2. Add new site → Import from Git → GitHub
+3. اختر المستودع: **yazanmoqrsh/sportsbag-cms-new**
+4. Build command: `npm run build`
+5. Publish directory: `dist`
+6. Deploy
+
+سيظهر رابط مثل: `https://sportsbag-xxxx.netlify.app`
 
 ## التشغيل المحلي
 
 ```bash
-pnpm install
-cp .env.example .env
-pnpm db:push
-pnpm dev
+npm install
+npm run dev
 ```
 
-الواجهة: http://localhost:5173
-الخادم: http://localhost:3000
+ثم افتح: http://localhost:5173
 
 ## التصميم
 - Primary: #1a3a52 (Navy)
 - Secondary: #d4af37 (Gold)
 - Accent: #2d7a4a (Green)
+- دعم كامل RTL + خط IBM Plex Sans Arabic
 
-تم البناء والصيانة: يوليو 2026
+تم التحضير للنشر المجاني السريع - يوليو 2026
